@@ -178,8 +178,9 @@ Using the miles function below do the following:
 function miles(KM, Miles){
     return miles;
 }
-  var kilometers = 10;
-  var miles = kilometers * 1.62137;
+  var kilometers = 15;
+  const factor = 0.62137
+  var miles = kilometers * factor;
   console.log('Task 5a', miles);
 
 
