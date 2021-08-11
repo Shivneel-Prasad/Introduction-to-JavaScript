@@ -157,11 +157,32 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
-    return user;
-}
-    
+// var userPick = prompt('What do you choose rock, paper or scissors')
 
+function game(user, computer){
+  let userPick = prompt('please choose one from rock, paper or scissors, and type into the box below').toLowerCase;
+  let randomNum = Math.floor(Math.random() * 3);
+  let computerPick = randomNum;
+      console.log('Task 4', (userPick, computerPick));
+  
+      if (userPick === computerPick){
+          console.log("It is a Tie!");
+          }else if (userPick === 'paper' && computerPick === 'rock'){
+          console.log("You win!");
+          }else if (userPick === 'rock' && computerPick === 'scissors'){
+          console.log("You win!");
+          }else if (userPick === 'scissors' && computerPick === 'rock'){
+          console.log("You lose!");
+          }else if (userPick === 'rock' && computerPick === 'paper'){
+          console.log("You lose!");
+          }else if (userPick === 'paper' && computerPick === 'scissors'){
+          console.log("You lose!");
+          }else if (userChoice === 'scissors' || computerChoice === 'paper'){
+          console.log("You win!");
+          }else{
+          console.log("Wrong input, please try again");
+          }
+}
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
